@@ -8,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #FFF;
+    color: #333; /* Cor padrão do texto */
+    background-color: #FFF; /* Cor padrão do fundo */
 }
 
 .accessibility-controls {
@@ -48,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #007bff;
+    color: #007bff; /* Cor padrão dos links */
     text-decoration: none;
     font-size: 16px;
 }
@@ -58,9 +58,9 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 main {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Cor padrão do fundo da área principal */
     padding: 20px;
-    color: #000;
+    color: #000; /* Cor padrão do texto da área principal */
 }
 
 section {
@@ -70,23 +70,32 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #444;
-    color: #fff;
+    background-color: #444; /* Cor padrão do fundo do rodapé */
+    color: #fff; /* Cor padrão do texto do rodapé */
 }
 
+/* Estilos para alto contraste */
 .high-contrast {
-    background-color: #000;
-    color: #FFF;
+    background-color: #000 !important; /* Fundo preto para alto contraste */
+    color: #FFF !important; /* Texto branco para alto contraste */
 }
 
+.high-contrast a {
+    color: #FFD700 !important; /* Links em dourado para alto contraste */
+}
+
+.high-contrast header, .high-contrast nav, .high-contrast main, .high-contrast section, .high-contrast footer {
+    background-color: #000 !important; /* Fundo preto em todas as seções */
+    color: #FFF !important; /* Texto branco em todas as seções */
+}
+
+.high-contrast nav ul li a {
+    color: #FFD700 !important; /* Links em dourado */
+}
+
+/* Estilos para destacar links */
 .highlight-links a {
-    background-color: #FFFF00;
-    color: #000;
+    background-color: #FFFF00; /* Fundo amarelo para destacar links */
+    color: #000; /* Texto preto para destacar links */
     padding: 3px;
-}
-
-.normal-links a {
-    background-color: transparent;
-    color: #007bff;
-    padding: 0;
 }
