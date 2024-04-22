@@ -77,7 +77,12 @@ footer {
     color: #fff; /* Texto do rodapé */
 }
 
-/* Estilos para alto contraste */
+img {
+    width: 100%; /* Largura como 100% do elemento pai */
+    height: auto; /* Altura automática para manter a proporção */
+    max-width: 100%; /* Máximo de 100% da largura do elemento pai */
+}
+
 .high-contrast {
     background-color: #000; /* Fundo preto para alto contraste */
     color: #FFF; /* Texto branco para alto contraste */
@@ -86,4 +91,11 @@ footer {
 .high-contrast a, .high-contrast nav ul li a, .high-contrast header, .high-contrast main, .high-contrast section h2, .high-contrast footer {
     color: #FFD700 !important; /* Links e textos em dourado para alto contraste */
     background-color: #000 !important; /* Fundo preto em todas as seções */
+}
+
+/* Estilos para destacar links */
+.highlight-links a {
+    background-color: #FFFF00; /* Fundo amarelo para destacar links */
+    color: #000; /* Texto preto para destacar links */
+    padding: 3px;
 }
