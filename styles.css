@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Fonte legível */
+    font-family: 'Arial', sans-serif; /* Fonte legível */
     line-height: 1.6; /* Espaçamento adequado para leitura */
     color: #333; /* Cor de fonte que contrasta bem com um fundo claro */
     background-color: #FFF; /* Fundo claro */
@@ -17,8 +17,8 @@ header, nav, main, section, footer {
 }
 
 header {
-    background-color: #007BFF; /* Cabeçalho com fundo azul */
-    color: white; /* Texto branco para alto contraste */
+    background-color: #0056b3; /* Cabeçalho com fundo azul mais escuro para melhor contraste */
+    color: #ffffff; /* Texto branco para alto contraste */
 }
 
 nav ul {
@@ -32,8 +32,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Links brancos para contraste com o fundo azul */
+    color: #ffffff; /* Links brancos para contraste com o fundo azul */
     text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
 }
 
 a:hover, a:focus {
@@ -43,16 +44,19 @@ a:hover, a:focus {
 main {
     background-color: #f4f4f4; /* Fundo cinza claro para a área principal */
     padding: 20px;
+    color: #000000; /* Cor de texto preto para contraste com o fundo */
 }
 
-section {
-    margin-bottom: 20px; /* Espaçamento entre seções */
+section h2 {
+    color: #0056b3; /* Cor azul mais escura para títulos para garantir contraste suficiente */
+    margin-bottom: 10px; /* Espaçamento abaixo do título para separar do texto */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #DDD; /* Fundo cinza para o rodapé */
+    background-color: #444444; /* Fundo cinza escuro para melhor contraste */
+    color: #ffffff; /* Texto branco para alto contraste */
 }
 
 img {
