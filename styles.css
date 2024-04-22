@@ -8,13 +8,13 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333; /* Cor padrão do texto */
-    background-color: #FFF; /* Cor padrão do fundo */
+    color: #333; /* Cor de texto padrão */
+    background-color: #FFF; /* Cor de fundo padrão */
 }
 
 .accessibility-controls {
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: #e2e2e2; /* Fundo mais claro para os controles */
     text-align: center;
 }
 
@@ -22,15 +22,15 @@ body {
     font-size: 16px;
     margin: 5px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #007bff; /* Azul padrão */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.accessibility-controls button:hover {
-    background-color: #0056b3;
+.accessibility-controls button:hover, .accessibility-controls button:focus {
+    background-color: #0056b3; /* Azul mais escuro para hover/focus */
 }
 
 header, nav, main, section, footer {
@@ -47,55 +47,43 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #007bff; /* Cor padrão dos links */
+nav ul li a, .normal-links a {
+    color: #007bff; /* Azul para links */
     text-decoration: none;
     font-size: 16px;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-    text-decoration: underline;
+nav ul li a:hover, nav ul li a:focus, .highlight-links a {
+    text-decoration: underline; /* Sublinhado para hover/focus */
+    background-color: #FFFF00; /* Fundo amarelo para destacar */
+    color: #000; /* Texto preto para destacar */
 }
 
 main {
-    background-color: #f4f4f4; /* Cor padrão do fundo da área principal */
+    background-color: #f4f4f4; /* Cor de fundo da área principal */
     padding: 20px;
-    color: #000; /* Cor padrão do texto da área principal */
+    color: #000; /* Cor de texto da área principal */
 }
 
-section {
-    margin-bottom: 20px;
+section h2 {
+    color: #0056b3; /* Azul para títulos */
+    font-size: 24px;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #444; /* Cor padrão do fundo do rodapé */
-    color: #fff; /* Cor padrão do texto do rodapé */
+    background-color: #444; /* Fundo do rodapé */
+    color: #fff; /* Texto do rodapé */
 }
 
 /* Estilos para alto contraste */
 .high-contrast {
-    background-color: #000 !important; /* Fundo preto para alto contraste */
-    color: #FFF !important; /* Texto branco para alto contraste */
+    background-color: #000; /* Fundo preto para alto contraste */
+    color: #FFF; /* Texto branco para alto contraste */
 }
 
-.high-contrast a {
-    color: #FFD700 !important; /* Links em dourado para alto contraste */
-}
-
-.high-contrast header, .high-contrast nav, .high-contrast main, .high-contrast section, .high-contrast footer {
+.high-contrast a, .high-contrast nav ul li a, .high-contrast header, .high-contrast main, .high-contrast section h2, .high-contrast footer {
+    color: #FFD700 !important; /* Links e textos em dourado para alto contraste */
     background-color: #000 !important; /* Fundo preto em todas as seções */
-    color: #FFF !important; /* Texto branco em todas as seções */
-}
-
-.high-contrast nav ul li a {
-    color: #FFD700 !important; /* Links em dourado */
-}
-
-/* Estilos para destacar links */
-.highlight-links a {
-    background-color: #FFFF00; /* Fundo amarelo para destacar links */
-    color: #000; /* Texto preto para destacar links */
-    padding: 3px;
 }
